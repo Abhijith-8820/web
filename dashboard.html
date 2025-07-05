@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Data Transfer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="darkToggle" />
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="dashboard">
+    <h2>Welcome, <span id="user-name">User</span></h2>
+
+    <form id="upload-form">
+      <input type="file" id="file-input" required />
+      <button type="submit">Upload File</button>
+    </form>
+
+    <h3>Uploaded Files</h3>
+    <ul id="file-list"></ul>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
